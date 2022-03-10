@@ -1,0 +1,44 @@
+BHP/MTI/1120 2.0 19/12/2021 TEST REPORT
+Site Reference: Northern Cross Dublin Analysing
+Testing
+FTAO: Thainara Souza
+Consulting
+Report Copies: Denis O'Riordan Calibrating
+Diele Alencar
+Elio Desouza
+Yaleen Mistry
+BHP
+New Road
+Client: Glenbrier Construction BHP Reference: 22/02/2069 Thomondgate
+Dunmore Lodge Order Number: NorthernCross01 Limerick
+Hayes Date Received: 08/02/2022 Tel +353 61 455399
+Navan Specified Grade: Not Specified Fax +353 61 455261
+Co. Meath E-Mail unaoconnor@bhp.ie
+Batch Reference: 23446
+Compressive Strength EN 12390-2:2009, EN 12390-3:2009, EN 12390-4:2000 BS 1881-116:1983
+Test Max
+Dimensions (mm) Method Compressive
+Cube Client Note Date Date of Age Mass Density Load Strength
+Ref Ref Length Width Height 1 Cast Test (Days) (g) (kg/m³) (KN) (N/mm²)
+5 83A 150 150 150 B 31/01/2022 09/02/2022 9 7985 2340 863 38.4
+Location: 2nd Floor Slab (10 - 20)(U - ZZ)
+6 83B 150 150 150 B 31/01/2022 09/02/2022 9 7929 2340 847 37.7
+Location: 2nd Floor Slab (10 - 20)(U - ZZ)
+1 82A 150 150 150 B 31/01/2022 09/02/2022 9 8070 2370 761 33.9
+Location: 1st Flr Walls W1 (30-39)(B)(39)(B-H)(31-32)(B-H)(41-49)(N-P)(35-41)(Z)(43-44)(Z)
+10 84A 150 148 150 B 02/02/2022 09/02/2022 7 7795 2300 726 32.7
+Location: 1 Flr Walls (31-37)(G)(31-32)(H-N)(35-36)(U-Z)(36)(Z-DD)
+Note 1: Dimension/shape requirements:  A = Meets EN 12390-1:2012;  B = Meets EN 12390-3:2019 Annex B; C = Meets BS 1881-116:1983 (Withdrawn)
+Authorised By: Received conditions: Acceptable unless otherwise stated
+Curing conditions: Immersed in water at 20 +/- 2 Degrees Centigrade
+Moisture condition at test: Saturated if stored by BHP for more than three days
+Moist if stored by BHP for less than three days
+Volume determined to EN 12390-7 2019 Cl.5.5
+Seamus O'Connell
+Technical Manager Information required by Cl.6 of EN12390-2 is retained by BHP if supplied by the customer
+Date Issued 09/02/2022
+Supplement to previous issue where applicable
+Test results relate only to this item. This test report shall not be duplicated except in full, without written approval of the laboratory
+Information identifying the 'Site Reference', 'FTAO', 'Report Copies', 'Client', 'Order Number', 'Specifiied Grade', 'Location' and information regarding 
+the supply of a 'Sampling Certificate' has been supplied by the customer
+Where BHP have not taken the sample, it has been supplied by the customer.  Sampling is outside the scope of accreditation 1
