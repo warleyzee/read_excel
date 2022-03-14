@@ -1,10 +1,15 @@
+from pprint import pprint
 import os
 import pdfplumber
 
+
+#Abrir local do arquivo.
 os.chdir(r"C:\Users\Warley Souza\Music\read_excel\pdf")
 os.listdir()
 salve_pdf = []
+item_excel = []
 i = 0
+# For para pegar todo os dados que sao tipo PDF
 for pdf in os.listdir():
     str_pdf = pdf[-3:]
 
@@ -13,20 +18,26 @@ for pdf in os.listdir():
         with pdfplumber.open(pdf) as temp:
             first_page = temp.pages[0]
             lista = first_page.extract_text()
-    
+
+        #Se o arquivo for PDF salva ele em um arquivo txt
         if(os.path.exists(r"C:\Users\Warley Souza\Music\read_excel\pdf\dados.txt")):
+            #Abrir arquivo para ser editado
             arquivo = open('dados.txt', 'r') 
             salve_pdf.append(lista)
 
+            #Editar arquivo txt com novo pdf
             arquivo = open('dados.txt', 'w')
             arquivo.writelines(salve_pdf)
-
+            #fechar arquivo apos inserir novo pdf
             arquivo.close()
+
         else:
+            #Se o arquivo nao existir criar ele primeiro
             file = lista
             with open('dados.txt', 'w') as arquivo:
                 arquivo.write(str(file)+ '\n') 
 
+#ler o arquivo com todo os arquivos pdf salvo
 f = open('dados.txt', 'r')
 texto = f.readlines()
 
@@ -51,13 +62,28 @@ for i in texto:
 
 index_list = texto
 
+#transforma cada linha do arquivo txt em um index pra lista
 for i, frase in enumerate(index_list):
   index_list[i] = frase[0].split()
 
-print(type(index_list[22][0]))
+#for para percorrer a lista
+for item in index_list:
+    try:
+        #transforma o primeiro item do index em um inteiro
+        index = int(item[0][0])
+        if index <= 1000:
+            item_excel.append({
+               'Client Ref': item[1],
+               'Date of Test':item[7],
+               'Test Age':item[8],
+               'Density':item[10],
+               'Compressive Strength':item[12], 
+            })
+            
+    except:
+        pass
 
-for i in index_list:
-    print(i)
+pprint(item_excel)
 
 
 
