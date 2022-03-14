@@ -1,73 +1,149 @@
-# import json
-# from pprint import pprint
+from csv import excel
+from msilib.schema import Error
+from re import S
+from tkinter import E
+from numpy import tri
+import pandas as pd
+
+dados = [{'Client Ref': '1D',
+  'Compressive Strength': '52.7',
+  'Date of Test': '09/03/2022',  
+  'Density': '2390',
+  'Test Age': '6'},
+ {'Client Ref': '1A',
+  'Compressive Strength': '52.7',
+  'Date of Test': '10/03/2022',  
+  'Density': '2360',
+  'Test Age': '56'},
+ {'Client Ref': '1B',
+  'Compressive Strength': '51.0',
+  'Date of Test': '09/03/2022',  
+  'Density': '2400',
+  'Test Age': '28'},
+ {'Client Ref': '1C',
+  'Compressive Strength': '50.1',
+  'Date of Test': '09/03/2022',  
+  'Density': '2430',
+  'Test Age': '28'},
+ {'Client Ref': '1E',
+  'Compressive Strength': '45.5',
+  'Date of Test': '10/03/2022',
+  'Density': '2380',
+  'Test Age': '28'},
+ {'Client Ref': '1F',
+  'Compressive Strength': '39.3',
+  'Date of Test': '10/03/2022',
+  'Density': '2380',
+  'Test Age': '28'},
+ {'Client Ref': '95A',
+  'Compressive Strength': '42.6',
+  'Date of Test': '09/03/2022',
+  'Density': '2360',
+  'Test Age': '22'},
+ {'Client Ref': '96A',
+  'Compressive Strength': '41.2',
+  'Date of Test': '09/03/2022',
+  'Density': '2380',
+  'Test Age': '21'},
+ {'Client Ref': '97A',
+  'Compressive Strength': '41.9',
+  'Date of Test': '09/03/2022',
+  'Density': '2380',
+  'Test Age': '20'},
+ {'Client Ref': '98A',
+  'Compressive Strength': '46.5',
+  'Date of Test': '09/03/2022',
+  'Density': '2380',
+  'Test Age': '19'},
+ {'Client Ref': '106A',
+  'Compressive Strength': '29.1',
+  'Date of Test': '09/03/2022',
+  'Density': '2370',
+  'Test Age': '9'},
+ {'Client Ref': '105A',
+  'Compressive Strength': '30.2',
+  'Date of Test': '09/03/2022',
+  'Density': '2350',
+  'Test Age': '9'},
+ {'Client Ref': '103A',
+  'Compressive Strength': '33.9',
+  'Date of Test': '09/03/2022',
+  'Density': '2350',
+  'Test Age': '13'},
+ {'Client Ref': '108A',
+  'Compressive Strength': '31.1',
+  'Date of Test': '09/03/2022',
+  'Density': '2350',
+  'Test Age': '7'},
+ {'Client Ref': '107A',
+  'Compressive Strength': '29.4',
+  'Date of Test': '09/03/2022',
+  'Density': '2360',
+  'Test Age': '8'},
+ {'Client Ref': '109A',
+  'Compressive Strength': '25.8',
+  'Date of Test': '10/03/2022',
+  'Density': '2360',
+  'Test Age': '7'},
+ {'Client Ref': '99A',
+  'Compressive Strength': '36.8',
+  'Date of Test': '09/03/2022',
+  'Density': '2370',
+  'Test Age': '16'},
+ {'Client Ref': '100A',
+  'Compressive Strength': '37.3',
+  'Date of Test': '09/03/2022',
+  'Density': '2310',
+  'Test Age': '15'},
+ {'Client Ref': '101A',
+  'Compressive Strength': '35.9',
+  'Date of Test': '09/03/2022',
+  'Density': '2400',
+  'Test Age': '15'},
+ {'Client Ref': '102A',
+  'Compressive Strength': '36.9',
+  'Date of Test': '09/03/2022',
+  'Density': '2370',
+  'Test Age': '14'}]
+
+df = pd.read_excel(r"C:\Users\Warley Souza\Music\read_excel\test.xlsx", engine='openpyxl')
+# df['Date Cast'].astype('datetime64')
+df['Date Cast'] = df['Date Cast'].dt.strftime('%d/%m/%Y')
 
 
-# lista = [['1','as','','asdf','','asdfasdfa','asdffeew','','','',],
-#         ['sd','sfsdfsf','','','asdf','',],
-#         ['4','as','','asdf','','asdfasdfa','asdffeew','','','',],
-#         ['gas',],
-#         ['3','asdf','','dfa','','  asdf','',],
-#         ['hasd','','asd','asdfas','','asdf',],
-#         ['2','asdf','','','','',]]
-
-# dados = []
-# for item in lista:
-#     i = int(item[0])
-#     print(i)
-#     if i == 1:
-#         dados.append({'Compressive': item[0],       
-#         'Cube Ref': item[1],
-#         'Date of Test': item[3],
-#         'Density': item[5],
-#         'Teste Age': item[6]
-#         })
-
-#     else:
-#         print('DEU ERRADO')
-        
-
-# pprint(dados)
-
-m = [ 
-        ['1','asd'],
-        ['2','sag'],
-        ['a','asd'],
-        ['4','sag'],
-        ['g','asd'],
-        ['6','sag'],
-        ['d','sag'],
-        ['6000','sag'],
-    ]
-
-dados = []
-cont = 0
-for item in m:
-    try:
-        teste = int(item[0][0])
-        print(teste)
-        print(type(teste))
-        if teste <= 1000:
-            print('entrou')
-            dados.append({
-                'Numero':item[0],
-                'String':item[1],
-            })
-            print(dados) 
-
-        cont += 1 
-    except:
-        cont += 1 
-        print(cont)
-        pass
-        
-print(dados)
-print(cont)
+# print(df['Date Cast'])
+survey_df = pd.DataFrame(df)
+# survey_df.info()
+# input()
 
 
 
-
-# i = int(m[0][0])
-
-
-# print(type(i))
-# print(m[0][0])
+for i in dados:
+    for item, trial in survey_df.iterrows():
+        cube = survey_df['Cube'] == i['Client Ref']
+        survey_df.loc[cube,'Date Tested'] = i['Date of Test']
+        survey_df.loc[cube,'Density'] = i['Density']
+        if i['Test Age'] == '7':
+            survey_df.loc[cube,'7 Day Result'] = i['Compressive Strength']
+        elif i['Test Age'] == '14':
+            survey_df.loc[cube,'14 Day Result'] = i['Compressive Strength']
+        elif i['Test Age'] == '28':
+            survey_df.loc[cube,'28 Day Result'] = i['Compressive Strength']
+        elif i['Test Age'] == '56':
+            #print( i['Test Age'])
+            survey_df.loc[cube,'56 Day Result'] = i['Compressive Strength']
+        else:
+            survey_df.loc[cube,'7 Day Result'] = i['Compressive Strength']+ '(' + i['Test Age'] + 'Days' + ')'
+            pass
+        survey_df
+        # input()
+try:
+    print()
+    # df['Date Tested'] = df['Date Tested'].dt.strftime('%d/%m/%Y')
+    file_name = ('Cube_finish.xlsx')
+    survey_df.to_excel(file_name)
+    print('Data Frame is written to Excel File Sucessfully')
+except:
+    print()
+    print("Error")
+print(survey_df)   
