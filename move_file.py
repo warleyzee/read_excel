@@ -21,7 +21,9 @@ class MoveFile():
                             
         except:
             print('CONTRATO JA EXISTENTE NA PASTA')
-            
+            for file in os.listdir():
+                str_pdf = file[-3:]
+                os.remove(file)
 
 
 teste = MoveFile()
