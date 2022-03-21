@@ -13,3 +13,5 @@
 * 1 python -m venv venv
 	¬ Select Pyhton (venv-venv)
 * 2 Set-ExecutionPolicy Unrestricted -Force
+
+ matplotlib

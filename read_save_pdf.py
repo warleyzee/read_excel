@@ -3,12 +3,12 @@ import os
 import pdfplumber
 
 
-class Read_PDF():
+class Read_Save_PDF():
 
     def save_pdf_txt(self, ):
         #Abrir local dos arquivo pdf.
         #Open the local the file pdf
-        os.chdir(r"C:\Users\Warley Souza\Music\read_excel\pdf")
+        os.chdir(r"C:\Users\Warley Souza\Music\read_excel\pdf_file")
         os.listdir()
         salve_pdf = []
 
@@ -30,12 +30,11 @@ class Read_PDF():
 
                     # Se o arquivo for PDF salva ele em um arquivo txt
                     # If the file same PDF, save he in a txt file
-                    if(os.path.exists(r"C:\Users\Warley Souza\Music\read_excel\pdf\dados.txt")):
+                    if(os.path.exists(r"C:\Users\Warley Souza\Music\read_excel\pdf_file\dados.txt")):
                         #Abrir arquivo para ser editado
                         #opening file for be edit 
                         arquivo = open('dados.txt', 'r') 
                         salve_pdf.append(lista)
-
                         #Editar arquivo txt com novo pdf
                         #Editing txt file with new pdf
                         arquivo = open('dados.txt', 'w')
@@ -53,8 +52,9 @@ class Read_PDF():
     def create_list_pdf(self,):
 
         self.item_excel = []
+        
         #ler o arquivo com todo os arquivos pdf salvo
-        f = open('dados.txt', 'r')
+        f = open(r"C:\Users\Warley Souza\Music\read_excel\pdf_file\dados.txt", 'r')
         texto = f.readlines()
 
         x = 0
@@ -84,7 +84,7 @@ class Read_PDF():
 
         #for para percorrer a lista
         for item in index_list:
-            try:
+            try:                   
                 #transforma o primeiro item do index em um inteiro
                 index = int(item[0][0])
                 if index <= 1000:
@@ -95,14 +95,13 @@ class Read_PDF():
                     'Density':item[10],
                     'Compressive Strength':item[12], 
                     })
-                
-                    
             except:
                 pass
+           
         return(self.item_excel)
 
-# test = Read_PDF().create_list_pdf()
-# pprint(test)
+# test = Read_Save_PDF().save_pdf_txt()
+# test = Read_Save_PDF().create_list_pdf()
 
 
 

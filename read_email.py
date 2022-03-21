@@ -1,8 +1,5 @@
 import imaplib
 import email
-from itertools import tee
-import os
-import base64
  
 class Mail():
 
@@ -46,4 +43,4 @@ class Mail():
                 arquivo.write(part.get_payload(decode=True))
                 arquivo.close()
             
-test = Mail().read_mail()
+# test = Mail().read_mail()
