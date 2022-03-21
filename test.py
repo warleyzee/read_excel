@@ -11,7 +11,6 @@ from openpyxl.styles import Alignment, Font, PatternFill, Border, Side, PatternF
 from posixpath import sep
 from read_save_pdf import Read_Save_PDF
 from move_file import MoveFile
-from pprint import pprint
 from datetime import datetime, date
 
 class File_Excel():
@@ -28,10 +27,10 @@ class File_Excel():
         
 
         df = pd.read_excel(r"C:\Users\Warley Souza\Music\read_excel\Cube_finish.xlsx", engine='openpyxl')
-        # df.head()
-        # df["Date Cast"] = df["Date Cast"].dt.strftime("%d-%m-%Y")
-        # print(df['Date Cast'])
-        # input()
+        # df.style.format({"Date Tested": lambda t: t.strftime("%d/%m/%Y")})
+        df['Date'] = pd.to_datetime (df['DateCast']).dt.date()
+        print(df)
+        input()
         survey_df = pd.DataFrame(df)
 
         for i in dados:
