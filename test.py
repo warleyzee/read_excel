@@ -1,3 +1,14 @@
+
+# df = pd.DataFrame({'DOB': {0: '26/1/2016', 1: '26/1/2016'}})
+# print (df)
+
+
+# df['DOB'] = pd.to_datetime(df.DOB)
+# print (df)
+
+# df['DOB'] = df['DOB'].dt.strftime('%d/%m/%Y')
+# print (df)
+
 from datetime import date, datetime
 from tkinter.font import BOLD
 from turtle import back
@@ -16,9 +27,9 @@ from datetime import datetime, date
 class File_Excel():
 
     def save_file_exce(self,):
-        font = Font(name=" Microsoft YaHei ", bold=True)
+        font = Font(name=" Microsoft YaHei ", bold=True, color="FEFEFE")
         alignment = Alignment(vertical="top", wrap_text=True)
-        pattern_fill = PatternFill(fill_type="solid", fgColor="D7E4BC")
+        pattern_fill = PatternFill(fill_type="solid", fgColor="1245A8")
         side = Side(style="thin")
         border = Border(left=side, right=side, top=side, bottom=side)
 
@@ -27,11 +38,10 @@ class File_Excel():
         
 
         df = pd.read_excel(r"C:\Users\Warley Souza\Music\read_excel\Cube_finish.xlsx", engine='openpyxl')
-        # df.style.format({"Date Tested": lambda t: t.strftime("%d/%m/%Y")})
-        df['Date'] = pd.to_datetime (df['DateCast']).dt.date()
-        print(df)
-        input()
+        df['Date Tested'] = df['Date Tested'].dt.strftime('%m/%d/%Y')
+        print (df)
         survey_df = pd.DataFrame(df)
+        input("STOP")
 
         for i in dados:
             cube = survey_df['Cube'] == i['Client Ref']
@@ -92,3 +102,4 @@ class File_Excel():
 
 test = File_Excel()
 test.save_file_exce()          
+

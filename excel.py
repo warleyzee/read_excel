@@ -16,9 +16,9 @@ from datetime import datetime, date
 class File_Excel():
 
     def save_file_exce(self,):
-        font = Font(name=" Microsoft YaHei ", bold=True)
+        font = Font(name=" Microsoft YaHei ", bold=True, color="FEFEFE")
         alignment = Alignment(vertical="top", wrap_text=True)
-        pattern_fill = PatternFill(fill_type="solid", fgColor="D7E4BC")
+        pattern_fill = PatternFill(fill_type="solid", fgColor="1245A8")
         side = Side(style="thin")
         border = Border(left=side, right=side, top=side, bottom=side)
 
@@ -30,6 +30,8 @@ class File_Excel():
         survey_df = pd.DataFrame(df)
 
         for i in dados:
+            # if i['Cube'] != i['Client Ref']:
+            #     pass
             cube = survey_df['Cube'] == i['Client Ref']
             survey_df.loc[cube,'Date Tested'] = i['Date of Test']
             survey_df.loc[cube,'Density'] = i['Density']
@@ -86,5 +88,5 @@ class File_Excel():
             print()
             print("Error")
 
-test = File_Excel()
-test.save_file_exce()          
+# test = File_Excel()
+# test.save_file_exce()          

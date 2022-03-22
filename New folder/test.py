@@ -1,3 +1,4 @@
+from ast import iter_child_nodes
 import os
 from pprint import pprint 
 import pdfplumber
@@ -11,7 +12,7 @@ class Name_PDF():
         self.name_pdf = []
         os.chdir(r"C:\Users\Warley Souza\Music\read_excel\pdf_file")
         os.listdir()
-        
+        print(os.listdir())
         for name in os.listdir():
             str_pdf = name[-3:]
 
@@ -38,7 +39,6 @@ class Name_PDF():
                                 texto[x] = texto[x].split(',')
                                 x += 1
                         # Esse for abaixo aqui é só para tirar o "\n" em algumas strings, é opcional.
-
                         for i in texto:
                             local = texto.index(i) # Local do i em texto
                             for b in i:
@@ -52,23 +52,24 @@ class Name_PDF():
                         #transforma cada linha do arquivo txt em um index pra lista
                         for i, frase in enumerate(index_list):
                             index_list[i] = frase[0].split()
-                            for item in index_list:
-                                print(item)
+                            if index_list[i][0] == 'Location:':
+                                floor = index_list[i][1]
+                                tipo = index_list[i][2]
+                                cont = len(os.listdir())+1
+                                print(os.listdir())
+                                print(cont)
+                                teste = (f'{cont} - {floor} {tipo} - (85-86) - 28 Days')
+                                print(teste)
                                 input()
-                                if len(self.name_pdf) < 0:
-                                    print(len(self.name_pdf))
-                                    if item[0] == 'Location:':
-                                        self.name_pdf.append({
-                                            'Location': item[0],
-                                            'Flor' : item[1],
-                                            'type': item[2],
-                                        })
-                                else:
-                                    pass
+                                break
+                            else:
+                                pass
+                            
+                                    
                             
 
         print("FIM")
-        print(self.name_pdf)
+        pprint(self.name_pdf)
         input("FIMFIM")
 
 

@@ -1,3 +1,4 @@
+from asyncore import read
 import imaplib
 import email
  
@@ -16,9 +17,9 @@ class Mail():
 
         #Percorrer caixa de entrada
         objConexao.list()
-        objConexao.select(mailbox='inbox',readonly=True)
+        objConexao.select(mailbox='inbox',readonly=False)
 
-        resposta,idDosEmails = objConexao.search(None, 'All')
+        resposta,idDosEmails = objConexao.search(None, 'UNSEEN')
 
         #percorer cada email atraves do id
         for nun in idDosEmails[0].split():
@@ -43,4 +44,4 @@ class Mail():
                 arquivo.write(part.get_payload(decode=True))
                 arquivo.close()
             
-# test = Mail().read_mail()
+# test = Mail().read_mail()     
