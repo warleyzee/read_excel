@@ -41,7 +41,7 @@ class Name_PDF():
             delete = Name_PDF().delete_file()
             create = Name_PDF().create_file()
 
-            # input("Delete???????") 
+            input("Delete???????") 
             str_pdf = name[-3:]
                 
             f = open(r"C:\Users\Warley Souza\Music\read_excel\pdf_file\name.txt", 'r')
@@ -75,16 +75,6 @@ class Name_PDF():
                         if index_list[i][0] == 'Location:':
                             floor = index_list[i][1]
                             tipo = index_list[i][2]
-                            if floor == '1':
-                                floor = '1st'
-                            elif floor == 'first':
-                                floor = '1st'
-                            elif floor == '2':
-                                floor = '2nd'
-                            elif floor == 'Grd':
-                                floor = 'Ground'
-                            elif tipo == 'Flr':
-                                tipo = 'Floor'
                             break
                         else:
                             pass
@@ -102,15 +92,18 @@ class Name_PDF():
             f.close()
             try:
                 # input("FECHE O PDF")
-                # os.chdir(r"C:\Users\Warley Souza\Music\read_excel\New folder")
-                os.chdir(r"C:\Users\Warley Souza\Glenbrier Ltd\Projects - NX-Site Master\xx NX - Design Team xx\09 - BCAR\04 - Concrete Cubes\01 - Results")
+                os.chdir(r"C:\Users\Warley Souza\Music\read_excel\New folder")
+                # os.chdir(r"C:\Users\Warley Souza\Glenbrier Ltd\Projects - NX-Site Master\xx NX - Design Team xx\09 - BCAR\04 - Concrete Cubes\01 - Results")
                 os.listdir()
                 cont = len(os.listdir())+1
                 teste = (f'{cont} - {floor} {tipo} - ({cube}) - {test_age} Days')
-                # os.rename(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\{}'.format(name_file),
-                #         r'C:\Users\Warley Souza\Music\read_excel\New folder\{}.pdf'.format(teste))
                 os.rename(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\{}'.format(name_file),
-                          r'C:\Users\Warley Souza\Glenbrier Ltd\Projects - NX-Site Master\xx NX - Design Team xx\09 - BCAR\04 - Concrete Cubes\01 - Results\{}.pdf'.format(teste))
+                        r'C:\Users\Warley Souza\Music\read_excel\New folder\{}.pdf'.format(teste))
+                # os.rename(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\{}',
+                #           r'C:\Users\Warley Souza\Glenbrier Ltd\Projects - NX-Site Master\xx NX - Design Team xx\09 - BCAR\04 - Concrete Cubes\01 - Results\{}.pdf'.format(name_file, teste))
+                print(name)
+                print(teste)
+                input("FIM VARIAVES")
             except:
                 print("Sem arquivos para mover!")
             

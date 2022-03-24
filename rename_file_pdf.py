@@ -14,7 +14,6 @@ class Name_PDF():
     def delete_file(self, ):
         if(os.path.exists(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\name.txt')):
                 os.remove(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\name.txt')
-                # input("Delete???????") 
     
     def create_file(self, ):
         os.chdir(r"C:\Users\Warley Souza\Music\read_excel\pdf_file")
@@ -23,7 +22,6 @@ class Name_PDF():
         for name in os.listdir():
                  
             with pdfplumber.open(name) as temp:
-                    print(name)
                     first_page = temp.pages[0]
                     lista = first_page.extract_text()
                     file = lista
@@ -41,13 +39,10 @@ class Name_PDF():
             delete = Name_PDF().delete_file()
             create = Name_PDF().create_file()
 
-            # input("Delete???????") 
             str_pdf = name[-3:]
                 
             f = open(r"C:\Users\Warley Souza\Music\read_excel\pdf_file\name.txt", 'r')
             texto = f.readlines()
-            # input("CRIOUUU????????????")
-
             x = 0
 
             while x < len(texto):
@@ -101,7 +96,6 @@ class Name_PDF():
             name_file = name
             f.close()
             try:
-                # input("FECHE O PDF")
                 # os.chdir(r"C:\Users\Warley Souza\Music\read_excel\New folder")
                 os.chdir(r"C:\Users\Warley Souza\Glenbrier Ltd\Projects - NX-Site Master\xx NX - Design Team xx\09 - BCAR\04 - Concrete Cubes\01 - Results")
                 os.listdir()
@@ -119,5 +113,5 @@ class Name_PDF():
                 
 
 
-test = Name_PDF().name_pdf()
+# test = Name_PDF().name_pdf()
 # create = Name_PDF().create_file()

@@ -81,8 +81,6 @@ class Read_Save_PDF():
         #transforma cada linha do arquivo txt em um index pra lista
         for i, frase in enumerate(index_list):
             index_list[i] = frase[0].split()
-            pprint(index_list[i])
-            input()
 
         #for para percorrer a lista
         for item in index_list:
@@ -102,8 +100,8 @@ class Read_Save_PDF():
            
         return(self.item_excel)
 
-test = Read_Save_PDF().save_pdf_txt()
-test = Read_Save_PDF().create_list_pdf()
+# test = Read_Save_PDF().save_pdf_txt()
+# test = Read_Save_PDF().create_list_pdf()
 
 
 

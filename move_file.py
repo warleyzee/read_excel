@@ -46,5 +46,5 @@ class MoveFile():
             print("File not found!!!")
 
 
-teste = MoveFile()
-teste.move_file_xlsx()
+# teste = MoveFile()
+# teste.move_file_xlsx()
