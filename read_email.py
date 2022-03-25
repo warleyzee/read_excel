@@ -1,4 +1,3 @@
-from asyncore import read
 import imaplib
 import email
  
@@ -39,7 +38,7 @@ class Mail():
                 #pegando o nome do arquivo em anexo
                 fileName = part.get_filename()
                 #criando um arquivo com o mesmo nome do anexo
-                arquivo = open(fileName, 'wb')
+                arquivo = open(r'C:\Users\Warley Souza\Music\read_excel\{}.pdf'.format(fileName), 'wb')
                 #escrevendo o binario do anexo no arquivo
                 arquivo.write(part.get_payload(decode=True))
                 arquivo.close()

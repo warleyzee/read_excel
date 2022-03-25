@@ -16,6 +16,7 @@ from datetime import datetime, date
 class File_Excel():
 
     def save_file_exce(self,):
+        #configurando cabecalho da tabela
         font = Font(name=" Microsoft YaHei ", bold=True, color="FEFEFE")
         alignment = Alignment(vertical="top", wrap_text=True)
         pattern_fill = PatternFill(fill_type="solid", fgColor="1245A8")
@@ -25,13 +26,13 @@ class File_Excel():
         #variavel que recebe os dados para preencher na tabela
         dados = Read_Save_PDF().create_list_pdf()
         
-
+        #criando o DataFrame com os dados da tablea
         df = pd.read_excel(r"C:\Users\Warley Souza\Music\read_excel\Cube_finish.xlsx", engine='openpyxl')
         survey_df = pd.DataFrame(df)
 
+        #Laco para inserir os dados no dataframe
         for i in dados:
-            # if i['Cube'] != i['Client Ref']:
-            #     pass
+
             cube = survey_df['Cube'] == i['Client Ref']
             survey_df.loc[cube,'Date Tested'] = i['Date of Test']
             survey_df.loc[cube,'Density'] = i['Density']
@@ -48,8 +49,9 @@ class File_Excel():
                 pass
             survey_df
         try:
-            print()
+            #removendo arquivo antigo da pasta
             os.remove(r'C:\Users\Warley Souza\Music\read_excel\Cube_finish.xlsx')
+            #criando arquivo novo           
             file_name = ('Cube_finish.xlsx')
             writer = pd.ExcelWriter('Cube_finish.xlsx',
                         engine='openpyxl',
@@ -58,17 +60,19 @@ class File_Excel():
             workbook = writer.book
             worksheet = writer.sheets['Sheet1']
             border = Border(left=side, right=side, top=side, bottom=side)
+            #formatando tabela
             for cell in itertools.chain(*worksheet["A1:J1"]):
                 cell.font = font
                 cell.alignment = alignment
                 cell.fill = pattern_fill
                 cell.border = border
-            for cell in itertools.chain(*worksheet["A2:J600"]):
+            for cell in itertools.chain(*worksheet["A2:J1000"]):
                 cell.border = border
             for cell in itertools.chain(*worksheet["C20:C60"], *worksheet["E20:E60"]):
                 cell.number_format = '#,##0.00'
             for cell in itertools.chain(*worksheet["D20:D60"]):
                 cell.number_format = '0%'
+            #formatando tamanho das celulas
             worksheet.column_dimensions["A"].width = 8
             worksheet.column_dimensions["B"].width = 21
             worksheet.column_dimensions["C"].width = 35
@@ -82,7 +86,6 @@ class File_Excel():
             writer.save()
             workbook
 
-            # move_xlsx = MoveFile().move_file_xlsx()
             print('Data Frame is written to Excel File Sucessfully')
         except:
             print()

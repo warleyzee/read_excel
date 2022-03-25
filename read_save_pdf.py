@@ -85,7 +85,7 @@ class Read_Save_PDF():
         #for para percorrer a lista
         for item in index_list:
             try:                   
-                #transforma o primeiro item do index em um inteiro
+                #transforma o primeiro item do index em um inteiro, pra colher as informacoes.
                 index = int(item[0][0])
                 if index <= 1000:
                     self.item_excel.append({

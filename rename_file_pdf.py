@@ -11,6 +11,7 @@ import pdfplumber
 
 class Name_PDF():
 
+    #fin
     def delete_file(self, ):
         if(os.path.exists(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\name.txt')):
                 os.remove(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\name.txt')
@@ -101,8 +102,6 @@ class Name_PDF():
                 os.listdir()
                 cont = len(os.listdir())+1
                 teste = (f'{cont} - {floor} {tipo} - ({cube}) - {test_age} Days')
-                # os.rename(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\{}'.format(name_file),
-                #         r'C:\Users\Warley Souza\Music\read_excel\New folder\{}.pdf'.format(teste))
                 os.rename(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\{}'.format(name_file),
                           r'C:\Users\Warley Souza\Glenbrier Ltd\Projects - NX-Site Master\xx NX - Design Team xx\09 - BCAR\04 - Concrete Cubes\01 - Results\{}.pdf'.format(teste))
             except:

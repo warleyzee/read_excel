@@ -9,43 +9,6 @@ Elio Desouza
 Yaleen Mistry
 BHP
 New Road
-Client: Glenbrier Construction BHP Reference: 22/01/1849 Thomondgate
-Dunmore Lodge Order Number: NorthernCross01 Limerick
-Hayes Date Received: 18/01/2022 Tel +353 61 455399
-Navan Specified Grade: Not Specified Fax +353 61 455261
-Co. Meath E-Mail unaoconnor@bhp.ie
-Batch Reference: 22340
-Compressive Strength EN 12390-2:2009, EN 12390-3:2009, EN 12390-4:2000 BS 1881-116:1983
-Test Max
-Dimensions (mm) Method Compressive
-Cube Client Note Date Date of Age Mass Density Load Strength
-Ref Ref Length Width Height 1 Cast Test (Days) (g) (kg/m³) (KN) (N/mm²)
-13 69D 150 150 150 B 12/01/2022 09/03/2022 56 8043 2390 1186 52.7
-Location: First Floor W1 (JJ-KK)(4-11)(DD-KK)(8-9)
-Note 1: Dimension/shape requirements:  A = Meets EN 12390-1:2012;  B = Meets EN 12390-3:2019 Annex B; C = Meets BS 1881-116:1983 (Withdrawn)
-Authorised By: Received conditions: Acceptable unless otherwise stated
-Curing conditions: Immersed in water at 20 +/- 2 Degrees Centigrade
-Moisture condition at test: Saturated if stored by BHP for more than three days
-Moist if stored by BHP for less than three days
-Volume determined to EN 12390-7 2019 Cl.5.5
-Seamus O'Connell
-Technical Manager Information required by Cl.6 of EN12390-2 is retained by BHP if supplied by the customer
-Date Issued 09/03/2022
-Supplement to previous issue where applicable
-Test results relate only to this item. This test report shall not be duplicated except in full, without written approval of the laboratory
-Information identifying the 'Site Reference', 'FTAO', 'Report Copies', 'Client', 'Order Number', 'Specifiied Grade', 'Location' and information regarding 
-the supply of a 'Sampling Certificate' has been supplied by the customer
-Where BHP have not taken the sample, it has been supplied by the customer.  Sampling is outside the scope of accreditation 1BHP/MTI/1120 2.0 19/12/2021 TEST REPORT
-Site Reference: Northern Cross Dublin Analysing
-Testing
-FTAO: Thainara Souza
-Consulting
-Report Copies: Denis O'Riordan Calibrating
-Diele Alencar
-Elio Desouza
-Yaleen Mistry
-BHP
-New Road
 Client: Glenbrier Construction BHP Reference: 22/01/1859 Thomondgate
 Dunmore Lodge Order Number: NorthernCross01 Limerick
 Hayes Date Received: 18/01/2022 Tel +353 61 455399
@@ -335,6 +298,43 @@ Volume determined to EN 12390-7 2019 Cl.5.5
 Seamus O'Connell
 Technical Manager Information required by Cl.6 of EN12390-2 is retained by BHP if supplied by the customer
 Date Issued 23/03/2022
+Supplement to previous issue where applicable
+Test results relate only to this item. This test report shall not be duplicated except in full, without written approval of the laboratory
+Information identifying the 'Site Reference', 'FTAO', 'Report Copies', 'Client', 'Order Number', 'Specifiied Grade', 'Location' and information regarding 
+the supply of a 'Sampling Certificate' has been supplied by the customer
+Where BHP have not taken the sample, it has been supplied by the customer.  Sampling is outside the scope of accreditation 1BHP/MTI/1120 2.0 19/12/2021 TEST REPORT
+Site Reference: Northern Cross Dublin Analysing
+Testing
+FTAO: Thainara Souza
+Consulting
+Report Copies: Denis O'Riordan Calibrating
+Diele Alencar
+Elio Desouza
+Michael Shine
+BHP
+New Road
+Client: Glenbrier Construction BHP Reference: 22/02/0552 Thomondgate
+Dunmore Lodge Order Number: NorthernCross01 Limerick
+Hayes Date Received: 01/02/2022 Tel +353 61 455399
+Navan Specified Grade: Not Specified Fax +353 61 455261
+Co. Meath E-Mail unaoconnor@bhp.ie
+Batch Reference: 23139
+Compressive Strength EN 12390-2:2009, EN 12390-3:2009, EN 12390-4:2000 BS 1881-116:1983
+Test Max
+Dimensions (mm) Method Compressive
+Cube Client Note Date Date of Age Mass Density Load Strength
+Ref Ref Length Width Height 1 Cast Test (Days) (g) (kg/m³) (KN) (N/mm²)
+16 80D 150 150 150 A 27/01/2022 24/03/2022 56 8130 2400 993 44.1
+Location: 1st Flr Walls W1 (44-45)(H-DD)(40-43)(Z-GG)(37)(Z-GG)(36-39)(Z-U)
+Note 1: Dimension/shape requirements:  A = Meets EN 12390-1:2012;  B = Meets EN 12390-3:2019 Annex B; C = Meets BS 1881-116:1983 (Withdrawn)
+Authorised By: Received conditions: Acceptable unless otherwise stated
+Curing conditions: Immersed in water at 20 +/- 2 Degrees Centigrade
+Moisture condition at test: Saturated if stored by BHP for more than three days
+Moist if stored by BHP for less than three days
+Volume determined to EN 12390-7 2019 Cl.5.5
+Seamus O'Connell
+Technical Manager Information required by Cl.6 of EN12390-2 is retained by BHP if supplied by the customer
+Date Issued 24/03/2022
 Supplement to previous issue where applicable
 Test results relate only to this item. This test report shall not be duplicated except in full, without written approval of the laboratory
 Information identifying the 'Site Reference', 'FTAO', 'Report Copies', 'Client', 'Order Number', 'Specifiied Grade', 'Location' and information regarding 
@@ -751,6 +751,43 @@ Consulting
 Report Copies: Denis O'Riordan Calibrating
 Diele Alencar
 Elio Desouza
+Michael Shine
+BHP
+New Road
+Client: Glenbrier Construction BHP Reference: 22/03/1816 Thomondgate
+Dunmore Lodge Order Number: NorthernCross01 Limerick
+Hayes Date Received: 08/03/2022 Tel +353 61 455399
+Navan Specified Grade: Not Specified Fax +353 61 455261
+Co. Meath E-Mail unaoconnor@bhp.ie
+Batch Reference: 24690
+Compressive Strength EN 12390-2:2009, EN 12390-3:2009, EN 12390-4:2000 BS 1881-116:1983
+Test Max
+Dimensions (mm) Method Compressive
+Cube Client Note Date Date of Age Mass Density Load Strength
+Ref Ref Length Width Height 1 Cast Test (Days) (g) (kg/m³) (KN) (N/mm²)
+2 103B 150 150 150 B 24/02/2022 24/03/2022 28 8014 2360 1017 45.2
+Location: 2nd Floor Wallsr (30-33)(B-N)(41-46)(N-P(40-43)(Z-GG)
+Note 1: Dimension/shape requirements:  A = Meets EN 12390-1:2012;  B = Meets EN 12390-3:2019 Annex B; C = Meets BS 1881-116:1983 (Withdrawn)
+Authorised By: Received conditions: Acceptable unless otherwise stated
+Curing conditions: Immersed in water at 20 +/- 2 Degrees Centigrade
+Moisture condition at test: Saturated if stored by BHP for more than three days
+Moist if stored by BHP for less than three days
+Volume determined to EN 12390-7 2019 Cl.5.5
+Seamus O'Connell
+Technical Manager Information required by Cl.6 of EN12390-2 is retained by BHP if supplied by the customer
+Date Issued 24/03/2022
+Supplement to previous issue where applicable
+Test results relate only to this item. This test report shall not be duplicated except in full, without written approval of the laboratory
+Information identifying the 'Site Reference', 'FTAO', 'Report Copies', 'Client', 'Order Number', 'Specifiied Grade', 'Location' and information regarding 
+the supply of a 'Sampling Certificate' has been supplied by the customer
+Where BHP have not taken the sample, it has been supplied by the customer.  Sampling is outside the scope of accreditation 1BHP/MTI/1120 2.0 19/12/2021 TEST REPORT
+Site Reference: Northern Cross Dublin Analysing
+Testing
+FTAO: Thainara Souza
+Consulting
+Report Copies: Denis O'Riordan Calibrating
+Diele Alencar
+Elio Desouza
 Yaleen Mistry
 BHP
 New Road
@@ -1072,6 +1109,43 @@ Elio Desouza
 Michael Shine
 BHP
 New Road
+Client: Glenbrier Construction BHP Reference: 22/03/3731 Thomondgate
+Dunmore Lodge Order Number: NorthernCross01 Limerick
+Hayes Date Received: 22/03/2022 Tel +353 61 455399
+Navan Specified Grade: Not Specified Fax +353 61 455261
+Co. Meath E-Mail unaoconnor@bhp.ie
+Batch Reference: 25161
+Compressive Strength EN 12390-2:2009, EN 12390-3:2009, EN 12390-4:2000 BS 1881-116:1983
+Test Max
+Dimensions (mm) Method Compressive
+Cube Client Note Date Date of Age Mass Density Load Strength
+Ref Ref Length Width Height 1 Cast Test (Days) (g) (kg/m³) (KN) (N/mm²)
+13 114A 150 150 150 B 10/03/2022 24/03/2022 14 7951 2340 910 40.5
+Location: 3rd Flr Slab (A-GG)(31-45) Half Landing Core A 03-03, 04-04)
+Note 1: Dimension/shape requirements:  A = Meets EN 12390-1:2012;  B = Meets EN 12390-3:2019 Annex B; C = Meets BS 1881-116:1983 (Withdrawn)
+Authorised By: Received conditions: Acceptable unless otherwise stated
+Curing conditions: Immersed in water at 20 +/- 2 Degrees Centigrade
+Moisture condition at test: Saturated if stored by BHP for more than three days
+Moist if stored by BHP for less than three days
+Volume determined to EN 12390-7 2019 Cl.5.5
+Seamus O'Connell
+Technical Manager Information required by Cl.6 of EN12390-2 is retained by BHP if supplied by the customer
+Date Issued 24/03/2022
+Supplement to previous issue where applicable
+Test results relate only to this item. This test report shall not be duplicated except in full, without written approval of the laboratory
+Information identifying the 'Site Reference', 'FTAO', 'Report Copies', 'Client', 'Order Number', 'Specifiied Grade', 'Location' and information regarding 
+the supply of a 'Sampling Certificate' has been supplied by the customer
+Where BHP have not taken the sample, it has been supplied by the customer.  Sampling is outside the scope of accreditation 1BHP/MTI/1120 2.0 19/12/2021 TEST REPORT
+Site Reference: Northern Cross Dublin Analysing
+Testing
+FTAO: Thainara Souza
+Consulting
+Report Copies: Denis O'Riordan Calibrating
+Diele Alencar
+Elio Desouza
+Michael Shine
+BHP
+New Road
 Client: Glenbrier Construction BHP Reference: 22/03/3732 Thomondgate
 Dunmore Lodge Order Number: NorthernCross01 Limerick
 Hayes Date Received: 22/03/2022 Tel +353 61 455399
@@ -1096,6 +1170,43 @@ Volume determined to EN 12390-7 2019 Cl.5.5
 Seamus O'Connell
 Technical Manager Information required by Cl.6 of EN12390-2 is retained by BHP if supplied by the customer
 Date Issued 23/03/2022
+Supplement to previous issue where applicable
+Test results relate only to this item. This test report shall not be duplicated except in full, without written approval of the laboratory
+Information identifying the 'Site Reference', 'FTAO', 'Report Copies', 'Client', 'Order Number', 'Specifiied Grade', 'Location' and information regarding 
+the supply of a 'Sampling Certificate' has been supplied by the customer
+Where BHP have not taken the sample, it has been supplied by the customer.  Sampling is outside the scope of accreditation 1BHP/MTI/1120 2.0 19/12/2021 TEST REPORT
+Site Reference: Northern Cross Dublin Analysing
+Testing
+FTAO: Thainara Souza
+Consulting
+Report Copies: Denis O'Riordan Calibrating
+Diele Alencar
+Elio Desouza
+Michael Shine
+BHP
+New Road
+Client: Glenbrier Construction BHP Reference: 22/03/3732 Thomondgate
+Dunmore Lodge Order Number: NorthernCross01 Limerick
+Hayes Date Received: 22/03/2022 Tel +353 61 455399
+Navan Specified Grade: Not Specified Fax +353 61 455261
+Co. Meath E-Mail unaoconnor@bhp.ie
+Batch Reference: 25162
+Compressive Strength EN 12390-2:2009, EN 12390-3:2009, EN 12390-4:2000 BS 1881-116:1983
+Test Max
+Dimensions (mm) Method Compressive
+Cube Client Note Date Date of Age Mass Density Load Strength
+Ref Ref Length Width Height 1 Cast Test (Days) (g) (kg/m³) (KN) (N/mm²)
+1 115A 150 150 150 B 10/03/2022 24/03/2022 14 8051 2360 960 42.7
+Location: 3rd Flr Walls (19)(U-JJ),(GG-JJ)(19-29),W1(P-DD)(25-27)
+Note 1: Dimension/shape requirements:  A = Meets EN 12390-1:2012;  B = Meets EN 12390-3:2019 Annex B; C = Meets BS 1881-116:1983 (Withdrawn)
+Authorised By: Received conditions: Acceptable unless otherwise stated
+Curing conditions: Immersed in water at 20 +/- 2 Degrees Centigrade
+Moisture condition at test: Saturated if stored by BHP for more than three days
+Moist if stored by BHP for less than three days
+Volume determined to EN 12390-7 2019 Cl.5.5
+Seamus O'Connell
+Technical Manager Information required by Cl.6 of EN12390-2 is retained by BHP if supplied by the customer
+Date Issued 24/03/2022
 Supplement to previous issue where applicable
 Test results relate only to this item. This test report shall not be duplicated except in full, without written approval of the laboratory
 Information identifying the 'Site Reference', 'FTAO', 'Report Copies', 'Client', 'Order Number', 'Specifiied Grade', 'Location' and information regarding 
