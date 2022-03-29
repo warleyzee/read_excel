@@ -6,18 +6,16 @@ import pdfplumber
 class Read_Save_PDF():
 
     def save_pdf_txt(self, ):
-        #Abrir local dos arquivo pdf.
         #Open the local the file pdf
         os.chdir(r"C:\Users\Warley Souza\Music\read_excel\pdf_file")
         os.listdir()
         salve_pdf = []
 
         if len(os.listdir()) <= 0:
-            print("Sem arquivo PDF na pasta")
+            print("Without file PDF from folder")
             print("The end...")
             input("Press enter to continue...")
         else:
-            # For para pegar todo os arquivos PDF
             # For to get all PDF file
             for pdf in os.listdir():
                 str_pdf = pdf[-3:]
@@ -28,23 +26,18 @@ class Read_Save_PDF():
                         first_page = temp.pages[0]
                         lista = first_page.extract_text()
 
-                    # Se o arquivo for PDF salva ele em um arquivo txt
                     # If the file same PDF, save he in a txt file
                     if(os.path.exists(r"C:\Users\Warley Souza\Music\read_excel\pdf_file\dados.txt")):
-                        #Abrir arquivo para ser editado
                         #opening file for be edit 
                         arquivo = open('dados.txt', 'r') 
                         salve_pdf.append(lista)
-                        #Editar arquivo txt com novo pdf
                         #Editing txt file with new pdf
                         arquivo = open('dados.txt', 'w')
                         arquivo.writelines(salve_pdf)
-                        #fechar arquivo apos inserir novo pdf
                         # close file after insert new pdf
                         arquivo.close()
 
                     else:
-                        #Se o arquivo nao existir criar ele primeiro
                         file = lista
                         with open('dados.txt', 'w') as arquivo:
                             arquivo.write(str(file)+ '\n') 
@@ -53,7 +46,7 @@ class Read_Save_PDF():
 
         self.item_excel = []
         
-        #ler o arquivo com todo os arquivos pdf salvo
+        #read file with all saved data
         f = open(r"C:\Users\Warley Souza\Music\read_excel\pdf_file\dados.txt", 'r')
         texto = f.readlines()
 
@@ -66,26 +59,24 @@ class Read_Save_PDF():
             else:
                 texto[x] = texto[x].split(',')
                 x += 1
-        # Esse for abaixo aqui é só para tirar o "\n" em algumas strings, é opcional.
-
+        #this for below is just to delete "\n" some strings
         for i in texto:
-            local = texto.index(i) # Local do i em texto
+            local = texto.index(i) 
             for b in i:
-                local2 = texto[local].index(b) # Local2 do b em i ( local )
+                local2 = texto[local].index(b) 
                 if "\n" in b:
-                    texto[local][local2] = b.replace("\n",'') # Substitui o valor de acordo com "local" e "local2"
+                    texto[local][local2] = b.replace("\n",'')
 
 
         index_list = texto
 
-        #transforma cada linha do arquivo txt em um index pra lista
+        #transform each line from file txt in a index to list
         for i, frase in enumerate(index_list):
             index_list[i] = frase[0].split()
 
-        #for para percorrer a lista
         for item in index_list:
-            try:                   
-                #transforma o primeiro item do index em um inteiro, pra colher as informacoes.
+            try:
+                #transform the first item index in a integer, 
                 index = int(item[0][0])
                 if index <= 1000:
                     self.item_excel.append({

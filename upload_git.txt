@@ -14,16 +14,7 @@
 	¬ Select Pyhton (venv-venv)
 * 2 Set-ExecutionPolicy Unrestricted -Force
 
- matplotlib
+pip install matplotlib
+pip install pdfplumber
 
  
-import pandas as pd
-technologies = ({
-    'Courses':["Spark","PySpark","Hadoop"],
-    'Fee' :[22000,25000,23000],
-    'InsertedDate':["2021/11/24","2021/11/25","2021/11/26"]
-               })
-df = pd.DataFrame(technologies)
-# Use pandas.to_datetime() to change datetime format
-df['DateTypeCol'] = pd.to_datetime(df.InsertedDate)
-print(df)

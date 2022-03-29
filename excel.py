@@ -16,21 +16,21 @@ from datetime import datetime, date
 class File_Excel():
 
     def save_file_exce(self,):
-        #configurando cabecalho da tabela
+        #setting table header
         font = Font(name=" Microsoft YaHei ", bold=True, color="FEFEFE")
         alignment = Alignment(vertical="top", wrap_text=True)
         pattern_fill = PatternFill(fill_type="solid", fgColor="1245A8")
         side = Side(style="thin")
         border = Border(left=side, right=side, top=side, bottom=side)
 
-        #variavel que recebe os dados para preencher na tabela
+        #variable that receives the data of fill the table
         dados = Read_Save_PDF().create_list_pdf()
         
-        #criando o DataFrame com os dados da tablea
+        #create DataFrame with the table data
         df = pd.read_excel(r"C:\Users\Warley Souza\Music\read_excel\Cube_finish.xlsx", engine='openpyxl')
         survey_df = pd.DataFrame(df)
 
-        #Laco para inserir os dados no dataframe
+        #Inserte data in the DataFrame
         for i in dados:
 
             cube = survey_df['Cube'] == i['Client Ref']
@@ -49,9 +49,9 @@ class File_Excel():
                 pass
             survey_df
         try:
-            #removendo arquivo antigo da pasta
+            #remove old file from folder
             os.remove(r'C:\Users\Warley Souza\Music\read_excel\Cube_finish.xlsx')
-            #criando arquivo novo           
+            # create new file           
             file_name = ('Cube_finish.xlsx')
             writer = pd.ExcelWriter('Cube_finish.xlsx',
                         engine='openpyxl',
@@ -60,7 +60,7 @@ class File_Excel():
             workbook = writer.book
             worksheet = writer.sheets['Sheet1']
             border = Border(left=side, right=side, top=side, bottom=side)
-            #formatando tabela
+            #formatting table
             for cell in itertools.chain(*worksheet["A1:J1"]):
                 cell.font = font
                 cell.alignment = alignment
@@ -72,7 +72,7 @@ class File_Excel():
                 cell.number_format = '#,##0.00'
             for cell in itertools.chain(*worksheet["D20:D60"]):
                 cell.number_format = '0%'
-            #formatando tamanho das celulas
+            #formatting cell size
             worksheet.column_dimensions["A"].width = 8
             worksheet.column_dimensions["B"].width = 21
             worksheet.column_dimensions["C"].width = 35

@@ -31,4 +31,4 @@ time.sleep(2)
 rename = Name_PDF().name_pdf()
 
 
-# input("Press Enter to finish...")
+input("Press Enter to finish...")

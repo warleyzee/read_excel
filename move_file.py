@@ -8,16 +8,15 @@ class MoveFile():
 
     def move_file(self,):
         try:
-            #caminho de onde o arquivo  original se encontra
+            #original file location
             os.chdir(r"C:\Users\Warley Souza\Music\read_excel")
             
 
             os.listdir()
-            """
-                for para percorrer a pasta do caminho onde se encontra todos os arquivos do projeto 
-                se encotrar algum arquivo com o nomem 'Contrato_' move para a pasta ContratoWORD
-            """
+
+            #going through all files from folder
             for file in os.listdir():
+                #take the last 3 character from file
                 str_pdf = file[-3:]
                 if str_pdf == "pdf":
                     os.rename(file, r"C:\Users\Warley Souza\Music\read_excel\pdf_file" + "\\" + file)
