@@ -8,8 +8,13 @@ class Mail():
         objConexao = imaplib.IMAP4_SSL("imap.gmail.com")
 
         #insert login and password e-mail
+<<<<<<< HEAD
         login = "doc.glenbrier@gmail.com"
         password = "Dc*gb2022!"           
+=======
+        login = ""
+        password = ""
+>>>>>>> 8579118163b4049da91e385897bdc874d75ce3f2
 
         #login
         objConexao.login(login,password)
