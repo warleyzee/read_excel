@@ -11,11 +11,12 @@ import pdfplumber
 
 class Name_PDF():
 
-    #fin
+    #delete file with name "name"
     def delete_file(self, ):
         if(os.path.exists(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\name.txt')):
                 os.remove(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\name.txt')
     
+    #create file txt with name "name"
     def create_file(self, ):
         os.chdir(r"C:\Users\Warley Souza\Music\read_excel\pdf_file")
         os.listdir()
@@ -31,6 +32,7 @@ class Name_PDF():
                         arquivo.write(str(lista)+ '\n')
                         break
 
+    #save fale in another folder with the rigth name
     def name_pdf(self, ):
         
         os.chdir(r"C:\Users\Warley Souza\Music\read_excel\pdf_file")
@@ -54,20 +56,20 @@ class Name_PDF():
                     texto[x] = texto[x].split(',')
                     x += 1  
             if str_pdf == 'pdf':
-                    # Esse for abaixo aqui é só para tirar o "\n" em algumas strings, é opcional.
                     for i in texto:
-                        local = texto.index(i) # Local do i em texto
+                        local = texto.index(i) 
                         for b in i:
-                            local2 = texto[local].index(b) # Local2 do b em i ( local )
+                            local2 = texto[local].index(b) 
                             if "\n" in b:
-                                texto[local][local2] = b.replace("\n",'') # Substitui o valor de acordo com "local" e "local2"
+                                texto[local][local2] = b.replace("\n",'') 
 
 
                     index_list = texto
 
-                    #transforma cada linha do arquivo txt em um index pra lista
+                    #transform each line from file txt in a index to list
                     for i, frase in enumerate(index_list):
                         index_list[i] = frase[0].split()
+
                         if index_list[i][0] == 'Location:':
                             floor = index_list[i][1]
                             tipo = index_list[i][2]
@@ -86,7 +88,7 @@ class Name_PDF():
                             pass
                     for item in index_list:
                         try:                   
-                            #transforma o primeiro item do index em um inteiro
+                             #transform the first item index in a integer, 
                             index = int(item[0][0])
                             if index <= 1000:
                                 test_age = item[8]
@@ -95,22 +97,19 @@ class Name_PDF():
                         except:
                             pass
             name_file = name
+            #close the file at the end
             f.close()
+
             try:
-                # os.chdir(r"C:\Users\Warley Souza\Music\read_excel\New folder")
                 os.chdir(r"C:\Users\Warley Souza\Glenbrier Ltd\Projects - NX-Site Master\xx NX - Design Team xx\09 - BCAR\04 - Concrete Cubes\01 - Results")
                 os.listdir()
                 cont = len(os.listdir())+1
+                #rename the file with, floor, tipo, cube, test_age
                 teste = (f'{cont} - {floor} {tipo} - ({cube}) - {test_age} Days')
                 os.rename(r'C:\Users\Warley Souza\Music\read_excel\pdf_file\{}'.format(name_file),
                           r'C:\Users\Warley Souza\Glenbrier Ltd\Projects - NX-Site Master\xx NX - Design Team xx\09 - BCAR\04 - Concrete Cubes\01 - Results\{}.pdf'.format(teste))
             except:
-                print("Sem arquivos para mover!")
-            
-            # 
-            # 
-                
-
+                print("without file to move")
 
 # test = Name_PDF().name_pdf()
 # create = Name_PDF().create_file()
