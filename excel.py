@@ -32,7 +32,6 @@ class File_Excel():
 
         #Inserte data in the DataFrame
         for i in dados:
-
             cube = survey_df['Cube'] == i['Client Ref']
             survey_df.loc[cube,'Date Tested'] = i['Date of Test']
             survey_df.loc[cube,'Density'] = i['Density']

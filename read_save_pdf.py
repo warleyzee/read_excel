@@ -19,9 +19,12 @@ class Read_Save_PDF():
             # For to get all PDF file
             for pdf in os.listdir():
                 str_pdf = pdf[-3:]
+                img = pdf[0:5]
 
-                if str_pdf == "pdf":
-
+                if img == "image":
+                    pass
+                    
+                elif str_pdf == "pdf":
                     with pdfplumber.open(pdf) as temp:
                         first_page = temp.pages[0]
                         lista = first_page.extract_text()
@@ -91,7 +94,7 @@ class Read_Save_PDF():
            
         return(self.item_excel)
 
-# test = Read_Save_PDF().save_pdf_txt()
+# test = Read_Save_PDF().save_pdf_txt() 
 # test = Read_Save_PDF().create_list_pdf()
 
 
