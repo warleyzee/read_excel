@@ -1,0 +1,20 @@
+ ### Upload Git ### 
+
+* 1 git init
+* 2 git remote add origin (LINK) 
+* 3 git pull origin (main) or (master)
+* 4 git add .
+* 5 git commit -m ("Texto para enviar")
+* 6 git push origin main
+
+
+### Create Venv ###
+
+* 1 python -m venv venv
+	¬ Select Pyhton (venv-venv)
+* 2 Set-ExecutionPolicy Unrestricted -Force
+
+pip install matplotlib
+pip install pdfplumber
+
+ 
